@@ -388,17 +388,7 @@
                 sysLabel.textContent = "P01 · connected";
                 shellTitle.textContent = "SAP Fiori Launchpad"; shellSub.textContent = "S/4HANA P01 · Client 100";
                 appTitle.textContent = "Home – Finance"; clock.textContent = "08:52 CET";
-            } else {
-                states[3].classList.remove('hidden');
-                pill.className = "flex items-center space-x-1.5 px-3 py-1 rounded text-xs font-semibold bg-snow-soft text-snow-teal border border-emerald-200";
-                pill.innerHTML = '<i data-lucide="ticket-check" class="w-3.5 h-3.5"></i><span>TICKET CLOSED · INC0051384</span>';
-                footer.className = "flex items-center space-x-1.5 text-snow-teal font-semibold";
-                footer.innerHTML = '<i data-lucide="check-circle" class="w-3.5 h-3.5"></i><span>ServiceNow updated · closure sent via Teams and email · KB update suggested</span>';
-                sysDot.className = "inline-block w-2 h-2 rounded-full bg-emerald-400";
-                sysLabel.textContent = "P01 · connected";
-                shellTitle.textContent = "ServiceNow"; shellSub.textContent = "Incident INC0051384";
-                appTitle.textContent = "Close & Learn"; clock.textContent = "08:53 CET";
-            }
+            } 
             document.querySelector('main').scrollTop = 0;
             if (window.lucide) lucide.createIcons();
         }
