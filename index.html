@@ -16,7 +16,7 @@
                             red: '#bb0000', green: '#107e3e'
                         },
                         yai: { violet: '#6a3df0', deep: '#4b25c4', soft: '#efeaff', line: '#d6cbff' },
-                        snow: { teal: '#1f4b4d', green: '#62d84e', soft: '#eef8ec' }
+                        itsm: { teal: '#1f4b4d', green: '#62d84e', soft: '#eef8ec' }
                     },
                     fontFamily: { mono: ['Consolas', 'Monaco', 'Courier New', 'monospace'] }
                 }
@@ -149,7 +149,7 @@
                 <div class="p-5 space-y-4">
                     <div>
                         <h4 class="text-sm font-bold">Diagnosing SAP access issue for Suraj Rajan</h4>
-                        <p class="text-xs text-sap-subText mt-0.5">Intent: <span class="font-mono">sap_login_failure</span> · Ticket <span class="font-mono font-semibold">INC0051384</span> opened in ServiceNow</p>
+                        <p class="text-xs text-sap-subText mt-0.5">Intent: <span class="font-mono">sap_login_failure</span> · Ticket <span class="font-mono font-semibold">INC0051384</span> opened in Service Desk</p>
                     </div>
                     <div class="space-y-2 text-xs" id="steps">
                         <div class="step flex items-start space-x-3 p-2.5 rounded border border-slate-200">
@@ -165,8 +165,8 @@
                             <div><div class="font-semibold">SAP user status check · P01</div><div class="text-sap-subText">User SRAJAN not locked · password valid · roles unchanged</div></div>
                         </div>
                         <div class="step flex items-start space-x-3 p-2.5 rounded border border-slate-200">
-                            <i data-lucide="book-open" class="w-4 h-4 mt-0.5 text-snow-teal flex-shrink-0"></i>
-                            <div><div class="font-semibold">ServiceNow KB match · KB0018842</div><div class="text-sap-subText">"SAP Logon points to decommissioned server after GUI 8.00 update" · 96% match · 41 similar incidents this week</div></div>
+                            <i data-lucide="book-open" class="w-4 h-4 mt-0.5 text-itsm-teal flex-shrink-0"></i>
+                            <div><div class="font-semibold">Knowledge Base match · KB0018842</div><div class="text-sap-subText">"SAP Logon points to decommissioned server after GUI 8.00 update" · 96% match · 41 similar incidents this week</div></div>
                         </div>
                         <div class="step flex items-start space-x-3 p-2.5 rounded border border-slate-200">
                             <i data-lucide="wrench" class="w-4 h-4 mt-0.5 text-amber-600 flex-shrink-0"></i>
@@ -179,7 +179,7 @@
                     </div>
                 </div>
                 <div class="bg-yai-soft px-5 py-2 border-t border-yai-line text-center text-[10px] text-yai-deep font-mono">
-                    Data processed in EU region (Frankfurt) · GDPR-compliant · every action logged to ServiceNow
+                    Data processed in EU region (Frankfurt) · GDPR-compliant · every action logged to Service Desk
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
                 <div class="text-right font-mono text-xs text-emerald-800 bg-white/80 px-3 py-1.5 rounded border border-emerald-200">
-                    ServiceNow: <strong>INC0051384</strong>
+                    Incident ID: <strong>INC0051384</strong>
                 </div>
             </div>
 
@@ -258,15 +258,15 @@
             </div>
         </div>
 
-        <!-- STATE 3: SERVICENOW TICKET CLOSED + LEARN -->
+        <!-- STATE 3: SERVICE DESK TICKET CLOSED + LEARN -->
         <div id="state-3" class="hidden w-full max-w-6xl m-auto pb-2">
             <div class="bg-white rounded border border-sap-border card overflow-hidden fade-in">
-                <div class="bg-snow-teal text-white px-5 py-3 flex items-center justify-between">
+                <div class="bg-itsm-teal text-white px-5 py-3 flex items-center justify-between">
                     <div class="flex items-center space-x-3">
-                        <span class="font-bold text-sm tracking-wide">servicenow</span>
+                        <span class="font-bold text-sm tracking-wide">IT Service Desk</span>
                         <span class="text-xs text-teal-100">Incident · INC0051384</span>
                     </div>
-                    <span class="flex items-center space-x-1.5 bg-snow-green text-snow-teal text-xs font-bold px-3 py-1 rounded"><i data-lucide="circle-check" class="w-3.5 h-3.5"></i><span>Closed – Resolved by Virtual Agent</span></span>
+                    <span class="flex items-center space-x-1.5 bg-itsm-green text-itsm-teal text-xs font-bold px-3 py-1 rounded"><i data-lucide="circle-check" class="w-3.5 h-3.5"></i><span>Closed – Resolved by Virtual Agent</span></span>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-3">
                     <div class="p-5 border-b lg:border-b-0 lg:border-r border-sap-border text-xs space-y-2.5">
@@ -373,7 +373,7 @@
                 pill.className = "flex items-center space-x-1.5 px-3 py-1 rounded text-xs font-semibold bg-yai-soft text-yai-deep border border-yai-line animate-pulse";
                 pill.innerHTML = '<i data-lucide="refresh-cw" class="w-3.5 h-3.5 animate-spin"></i><span>AUTOMATED DIAGNOSIS RUNNING</span>';
                 footer.className = "flex items-center space-x-1.5 text-yai-deep font-semibold";
-                footer.innerHTML = '<i data-lucide="refresh-cw" class="w-3.5 h-3.5 animate-spin"></i><span>Yellow.ai: SysTrack + ServiceNow KB0018842 · applying fix</span>';
+                footer.innerHTML = '<i data-lucide="refresh-cw" class="w-3.5 h-3.5 animate-spin"></i><span>Yellow.ai: SysTrack + Knowledge Base KB0018842 · applying fix</span>';
                 sysDot.className = "inline-block w-2 h-2 rounded-full bg-amber-400";
                 sysLabel.textContent = "P01 · repairing";
                 clock.textContent = "08:50 CET";
